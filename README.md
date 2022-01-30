@@ -15,14 +15,12 @@ Examples
 
     PipeRes = ?PIPE(42, [
                   fun add/1, 
-                  {fun dbl/1,    []},
                   {fun offset/2, [100]},
                   {other, otherfunc, [1]}
                  ]).
 
     PipeRes = pipe:pipe(42, [
                     fun add/1, 
-                    {fun dbl/1,    []},
                     {fun offset/2, [100]},
                     {other, otherfunc, [1]}
                    ]).
